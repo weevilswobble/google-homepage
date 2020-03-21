@@ -11,6 +11,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .center {
+        align-self: center;
+    }
     ul  {
         list-style-type: none;
         margin: 0;
@@ -22,12 +25,15 @@
     }
     li a {
         display: block;
-        align-content: center;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
     }
     #search {
         height: 36px;
         min-width: 54px;
         text-align: center;
+        
     } 
     #lucky {
         height: 36px;
@@ -39,13 +45,22 @@
         width: 500px;
         height: 100%;
         font-size: 16px;
-        padding-left: 16px;
-        padding-right: 50px;
+        left: 100%;
         border: none;
         outline: 0 !important;
         border-radius: 2px;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
         transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        left: 37%;
+    }
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        text-align: left;
+        width: 100%;
     }
     .container {
         text-align: center;
